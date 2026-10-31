@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forever & Always ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="hearts"></div>
+
+<header class="hero">
+    <p class="tag">A LITTLE WORLD MADE JUST FOR YOU</p>
+    <div class="rose">🌹</div>
+    <h1>Happy Birthday</h1>
+    <h2>My Beautiful <span id="girlName">My Love</span> ❤️</h2>
+    <p class="intro">
+        In a world full of people, my heart found you.
+        Today, this little world belongs to you.
+    </p>
+    <p class="signature">With endless love, Anthoni Arun 💗</p>
+
+    <button onclick="startSurprise()">Open Your Surprise 💌</button>
+    <button class="musicBtn" onclick="toggleMusic()">🎵 Play Music</button>
+    <audio id="music" loop>
+        <source src="music (2).mp3" type="audio/mpeg">
+    </audio>
+</header>
+
+<section class="section" id="letter">
+    <h1>💌 A Letter From My Heart</h1>
+    <div class="envelope" onclick="openLetter()">
+        <div class="envelope-icon">💌</div>
+        <p>Touch to open your love letter</p>
+    </div>
+
+    <div class="letter-paper" id="loveLetter">
+        <h2>My Dearest Love ❤️</h2>
+        <p>
+            Happy Birthday, my princess!
+
+            <!-- WRITE YOUR PERSONAL MESSAGE HERE -->
+
+            You are one of the most beautiful
+            parts of my life. Your smile makes
+            my difficult days brighter.
+
+            I may not have perfect words to
+            explain my feelings, but I want
+            you to know how special you are.
+
+            May all your dreams come true.
+            Keep smiling and stay happy.
+
+            Forever yours,
+            Anthoni Arun ❤️
+        </p>
+    </div>
+</section>
+
+<section class="section">
+    <h1>🎂 Make A Birthday Wish</h1>
+    <div class="cake">🎂</div>
+    <p>Make a wish and blow out your candles!</p>
+    <button onclick="blowCandles()">Blow Candles ✨</button>
+    <p id="wishMessage"></p>
+</section>
+
+<section class="section">
+    <h1>📸 Our Little Memories</h1>
+    <p>Every picture holds a beautiful memory.</p>
+
+    <div class="gallery">
+        <img src="photo1.jpg" alt="Memory one" onclick="viewPhoto(this)">
+        <img src="photo2.jpg" alt="Memory two" onclick="viewPhoto(this)">
+        <img src="photo3.jpg" alt="Memory three" onclick="viewPhoto(this)">
+    </div>
+    <div id="photoViewer" onclick="closePhoto()">
+        <img id="largePhoto" src="" alt="Selected memory">
+    </div>
+</section>
+
+<section class="section">
+    <h1>💕 How Well Do You Know My Heart?</h1>
+    <p>Let's play a little love quiz!</p>
+
+    <div class="game">
+        <h2 id="question">What is my favourite thing about you?</h2>
+        <div id="answers">
+            <button onclick="answerQuiz(0)">Your smile 😊</button>
+            <button onclick="answerQuiz(1)">Your kindness 💗</button>
+            <button onclick="answerQuiz(2)">Everything about you ❤️</button>
+        </div>
+        <p id="quizResult"></p>
+    </div>
+</section>
+
+<section class="section">
+    <h1>💞 A Little Promise</h1>
+    <div class="promise">
+        "I cannot promise a perfect life,
+        but I promise to keep choosing you,
+        appreciating you and wishing happiness
+        for you, every single day."
+    </div>
+</section>
+
+<section class="section">
+    <h1>🎁 One Last Surprise</h1>
+    <p>There is something hidden just for you...</p>
+    <button onclick="finalSurprise()">Unlock My Secret ❤️</button>
+    <div id="secretMessage">
+        <h2>You are my favourite notification,
+            my sweetest thought and my special person! 🥹</h2>
+        <p>I love you endlessly. ❤️</p>
+    </div>
+</section>
+
+<footer>
+    <h2>Forever & Always ❤️</h2>
+    <p>Made with love by Anthoni Arun</p>
+    <p>One heart. One beautiful story. 💗</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
